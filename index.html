@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Bright Future School - Nurturing Excellence in Education">
+    <meta name="keywords" content="school, education, admission, curriculum, student">
+    <title>Bright Future School - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+    <!-- Header -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> +91 1234567890</span>
+                    <span><i class="fas fa-envelope"></i> info@brightfuture.edu</span>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-container">
+                    <a href="#" class="logo" onclick="showPage('home')">
+                        <div class="logo-img"><img src="/images/generated-image.png" alt=""></div>
+                        <span>Bright Future</span>
+                    </a>
+                    <button class="menu-toggle" onclick="toggleMenu()">
+                        <i class="fas fa-bars" id="menuIcon"></i>
+                    </button>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#" onclick="showPage('home'); closeMenuOnMobile()">Home</a></li>
+                        <li><a href="#" onclick="showPage('admission'); closeMenuOnMobile()">Admission</a></li>
+                        <li><a href="#" onclick="showPage('syllabus'); closeMenuOnMobile()">Syllabus</a></li>
+                        <li><a href="#" onclick="showPage('exams'); closeMenuOnMobile()">Exam Dates</a></li>
+                        <li><a href="#" onclick="showPage('staff'); closeMenuOnMobile()">Staff</a></li>
+                        <li><a href="#" onclick="showPage('gallery'); closeMenuOnMobile()">Gallery</a></li>
+                        <li><a href="#" onclick="showPage('contact'); closeMenuOnMobile()">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-content">
+        <!-- Home Page -->
+    <div id="home" class="page-content active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Welcome to Bright Future School</h1>
+                    <p>Nurturing Excellence in Education Since 1985</p>
+                    <div class="cta-buttons">
+                        <a href="#" class="btn btn-primary" onclick="showPage('admission')">Apply for Admission</a>
+                        <a href="#" class="btn btn-secondary" onclick="showPage('contact')">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-users"></i></div>
+                        <div class="stat-number">2500+</div>
+                        <div class="stat-label">Students</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <div class="stat-number">120+</div>
+                        <div class="stat-label">Teachers</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Awards Won</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-calendar"></i></div>
+                        <div class="stat-number">38</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links Section -->
+        <section class="quick-links">
+            <div class="container">
+                <h2 class="section-title">Quick Access</h2>
+                <div class="links-grid">
+                    <div class="link-card" onclick="showPage('admission')">
+                        <i class="fas fa-user-graduate"></i>
+                        <h3>Admissions</h3>
+                        <p>Start your journey with us. Apply now for new academic session</p>
+                    </div>
+                    <div class="link-card" onclick="showPage('syllabus')">
+                        <i class="fas fa-book-open"></i>
+                        <h3>Syllabus</h3>
+                        <p>Explore our comprehensive curriculum and timetables</p>
+                    </div>
+                    <div class="link-card" onclick="showPage('exams')">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h3>Exam Dates</h3>
+                        <p>Check upcoming examination schedules and important dates</p>
+                    </div>
+                    <div class="link-card" onclick="showPage('staff')">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Our Faculty</h3>
+                        <p>Meet our experienced and dedicated teaching staff</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Faculty Section -->
+        <section class="featured-faculty">
+            <div class="container">
+                <h2 class="section-title">Meet Our Expert Faculty</h2>
+                <div class="faculty-showcase">
+                    <div class="faculty-highlight">
+                        <div class="faculty-avatar">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Dr. Rajesh Kumar</h3>
+                        <div class="designation">Principal</div>
+                        <div class="qualifications">Ph.D. in Education</div>
+                        <div class="experience">25+ Years Experience</div>
+                    </div>
+                    <div class="faculty-highlight">
+                        <div class="faculty-avatar">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Mr. Amit Verma</h3>
+                        <div class="designation">Head of Mathematics</div>
+                        <div class="qualifications">M.Sc. Mathematics, B.Ed.</div>
+                        <div class="experience">15+ Years Experience</div>
+                    </div>
+                    <div class="faculty-highlight">
+                        <div class="faculty-avatar">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Dr. Suresh Reddy</h3>
+                        <div class="designation">Science Department Head</div>
+                        <div class="qualifications">Ph.D. Physics, M.Sc.</div>
+                        <div class="experience">18+ Years Experience</div>
+                    </div>
+                    <div class="faculty-highlight">
+                        <div class="faculty-avatar">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Ms. Sneha Patel</h3>
+                        <div class="designation">English Department Head</div>
+                        <div class="qualifications">M.A. English, B.Ed.</div>
+                        <div class="experience">4+ Years Experience</div>
+                    </div>
+                    <div class="faculty-highlight">
+                        <div class="faculty-avatar">
+                            <i class="fa-solid fa-language"></i>
+                        </div>
+                        <h3>Ms. shivani Tichkule</h3>
+                        <div class="designation">Hindi Department Head</div>
+                        <div class="qualifications">M.A. Hindi, B.Ed.</div>
+                        <div class="experience">3+ Years Experience</div>
+                    </div>
+                    <div class="faculty-highlight">
+                        <div class="faculty-avatar">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <h3>Baburao Aapte</h3>
+                        <div class="designation">Computer Science Head</div>
+                        <div class="qualifications">B-Tech, M-Tech</div>
+                        <div class="experience">10+ Years Experience</div>
+                    </div>
+                </div>
+                <div class="view-all-staff">
+                    <a href="#" class="btn" onclick="showPage('staff'); return false;">View All Faculty Members</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news">
+            <div class="container">
+                <h2 class="section-title">Latest News & Announcements</h2>
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-image">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar"></i> October 25, 2025
+                            </div>
+                            <h3>National Science Competition Winners</h3>
+                            <p>Our students secured top positions in the National Science Olympiad. Congratulations to all participants!</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar"></i> October 20, 2025
+                            </div>
+                            <h3>Admission Open 2025-26</h3>
+                            <p>Applications are now open for the academic year 2025-26. Limited seats available. Apply early!</p>
+                        </div>
+                    </div>
+                    <div class="news-card">
+                        <div class="news-image">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-date">
+                                <i class="far fa-calendar"></i> October 15, 2025
+                            </div>
+                            <h3>Annual Sports Day Event</h3>
+                            <p>Join us for the Annual Sports Day on November 10th. Parents and guardians are cordially invited.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Calendar -->
+        <section class="events">
+            <div class="container">
+                <h2 class="section-title">Upcoming Events</h2>
+                <div class="events-list">
+                    <div class="event-item">
+                        <div class="event-date">
+                            <div class="event-day">10</div>
+                            <div class="event-month">Nov</div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Annual Sports Day</h3>
+                            <p><i class="fas fa-clock"></i> 9:00 AM - 4:00 PM | <i class="fas fa-map-marker-alt"></i> School Playground</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <div class="event-day">15</div>
+                            <div class="event-month">Nov</div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Parent-Teacher Meeting</h3>
+                            <p><i class="fas fa-clock"></i> 10:00 AM - 2:00 PM | <i class="fas fa-map-marker-alt"></i> School Auditorium</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <div class="event-day">20</div>
+                            <div class="event-month">Nov</div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Mid-Term Examinations Begin</h3>
+                            <p><i class="fas fa-clock"></i> As per schedule | <i class="fas fa-map-marker-alt"></i> Respective Classrooms</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <div class="event-day">05</div>
+                            <div class="event-month">Dec</div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Science Exhibition</h3>
+                            <p><i class="fas fa-clock"></i> 9:00 AM - 3:00 PM | <i class="fas fa-map-marker-alt"></i> Science Block</p>
+                        </div>
+                    </div>
+                    <div class="event-item">
+                        <div class="event-date">
+                            <div class="event-day">20</div>
+                            <div class="event-month">Dec</div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Winter Break Begins</h3>
+                            <p><i class="fas fa-clock"></i> All Day | <i class="fas fa-map-marker-alt"></i> School Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Admission Page -->
+    <div id="admission" class="page-content">
+        <div class="container">
+            <h1 class="section-title">Admissions 2025-26</h1>
+            
+            <div class="admission-section">
+                <h2>Admission Process</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-number">1</div>
+                        <h3>Fill Application</h3>
+                        <p>Complete the online admission form with required details</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">2</div>
+                        <h3>Submit Documents</h3>
+                        <p>Upload necessary documents and certificates</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">3</div>
+                        <h3>Entrance Test</h3>
+                        <p>Appear for age-appropriate entrance examination</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-number">4</div>
+                        <h3>Interview</h3>
+                        <p>Attend interview session with parents</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admission-section">
+                <h2>Fee Structure 2025-26</h2>
+                <table class="fee-table">
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Admission Fee</th>
+                            <th>Tuition Fee (Monthly)</th>
+                            <th>Annual Charges</th>
+                            <th>Total (First Year)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nursery - KG</td>
+                            <td>₹15,000</td>
+                            <td>₹5,000</td>
+                            <td>₹8,000</td>
+                            <td>₹83,000</td>
+                        </tr>
+                        <tr>
+                            <td>Class 1 - 5</td>
+                            <td>₹18,000</td>
+                            <td>₹6,000</td>
+                            <td>₹10,000</td>
+                            <td>₹1,00,000</td>
+                        </tr>
+                        <tr>
+                            <td>Class 6 - 8</td>
+                            <td>₹20,000</td>
+                            <td>₹7,000</td>
+                            <td>₹12,000</td>
+                            <td>₹1,16,000</td>
+                        </tr>
+                        <tr>
+                            <td>Class 9 - 10</td>
+                            <td>₹22,000</td>
+                            <td>₹8,000</td>
+                            <td>₹15,000</td>
+                            <td>₹1,33,000</td>
+                        </tr>
+                        <tr>
+                            <td>Class 11 - 12</td>
+                            <td>₹25,000</td>
+                            <td>₹9,000</td>
+                            <td>₹18,000</td>
+                            <td>₹1,51,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="admission-section">
+                <h2>Online Admission Form</h2>
+                <form id="admissionForm">
+                    <div class="form-group">
+                        <label>Student Name *</label>
+                        <input type="text" required placeholder="Enter student's full name">
+                    </div>
+                    <div class="form-group">
+                        <label>Date of Birth *</label>
+                        <input type="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Class Applying For *</label>
+                        <select required>
+                            <option value="">Select Class</option>
+                            <option>Nursery</option>
+                            <option>KG</option>
+                            <option>Class 1</option>
+                            <option>Class 2</option>
+                            <option>Class 3</option>
+                            <option>Class 4</option>
+                            <option>Class 5</option>
+                            <option>Class 6</option>
+                            <option>Class 7</option>
+                            <option>Class 8</option>
+                            <option>Class 9</option>
+                            <option>Class 10</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Parent/Guardian Name *</label>
+                        <input type="text" required placeholder="Enter parent's name">
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Number *</label>
+                        <input type="tel" required placeholder="+91 1234567890">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address *</label>
+                        <input type="email" required placeholder="email@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Previous School</label>
+                        <input type="text" placeholder="Enter previous school name (if any)">
+                    </div>
+                    <div class="form-group">
+                        <label>Address *</label>
+                        <textarea required placeholder="Enter complete residential address"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Syllabus & Timetable Page -->
+    <div id="syllabus" class="page-content">
+        <div class="container">
+            <h1 class="section-title">Syllabus & Timetable</h1>
+            
+            <div class="class-selector">
+                <label><strong>Select Class: </strong></label>
+                <select id="classSelect" onchange="updateSyllabus()">
+                    <option value="1">Class 1</option>
+                    <option value="2">Class 2</option>
+                    <option value="3">Class 3</option>
+                    <option value="4">Class 4</option>
+                    <option value="5">Class 5</option>
+                    <option value="6">Class 6</option>
+                    <option value="7">Class 7</option>
+                    <option value="8">Class 8</option>
+                    <option value="9">Class 9</option>
+                    <option value="10">Class 10</option>
+                </select>
+            </div>
+
+            <div class="syllabus-content">
+                <h2>Syllabus Overview - Class <span id="selectedClass">1</span></h2>
+                <div id="syllabusContent">
+                    <div class="subject-item">
+                        <h3><i class="fas fa-book"></i> English</h3>
+                        <p><strong>Topics:</strong> Alphabets, Simple Words, Basic Sentences, Rhymes, Stories</p>
+                        <p><strong>Learning Outcomes:</strong> Reading, Writing, Basic Communication</p>
+                    </div>
+                    <div class="subject-item">
+                        <h3><i class="fas fa-calculator"></i> Mathematics</h3>
+                        <p><strong>Topics:</strong> Numbers 1-100, Addition, Subtraction, Shapes, Patterns</p>
+                        <p><strong>Learning Outcomes:</strong> Number Recognition, Basic Calculations</p>
+                    </div>
+                    <div class="subject-item">
+                        <h3><i class="fas fa-globe"></i> Environmental Science</h3>
+                        <p><strong>Topics:</strong> My Family, Animals, Plants, Seasons, Good Habits</p>
+                        <p><strong>Learning Outcomes:</strong> Environmental Awareness, Social Skills</p>
+                    </div>
+                    <div class="subject-item">
+                        <h3><i class="fas fa-language"></i> Hindi</h3>
+                        <p><strong>Topics:</strong> Varnamala, Simple Words, Basic Sentences</p>
+                        <p><strong>Learning Outcomes:</strong> Hindi Reading and Writing</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 40px;">Weekly Timetable - Class <span id="selectedClassTT">1</span></h2>
+                <div class="timetable">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Time</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>8:00 - 8:45</td>
+                                <td>English</td>
+                                <td>Mathematics</td>
+                                <td>English</td>
+                                <td>Mathematics</td>
+                                <td>Hindi</td>
+                            </tr>
+                            <tr>
+                                <td>8:45 - 9:30</td>
+                                <td>Mathematics</td>
+                                <td>English</td>
+                                <td>Mathematics</td>
+                                <td>EVS</td>
+                                <td>English</td>
+                            </tr>
+                            <tr>
+                                <td>9:30 - 10:15</td>
+                                <td>Hindi</td>
+                                <td>EVS</td>
+                                <td>Hindi</td>
+                                <td>English</td>
+                                <td>Mathematics</td>
+                            </tr>
+                            <tr>
+                                <td>10:15 - 10:45</td>
+                                <td colspan="5" class="break">BREAK</td>
+                            </tr>
+                            <tr>
+                                <td>10:45 - 11:30</td>
+                                <td>EVS</td>
+                                <td>Hindi</td>
+                                <td>Art & Craft</td>
+                                <td>Computer</td>
+                                <td>EVS</td>
+                            </tr>
+                            <tr>
+                                <td>11:30 - 12:15</td>
+                                <td>Computer</td>
+                                <td>Games</td>
+                                <td>Music</td>
+                                <td>Art & Craft</td>
+                                <td>Games</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exam Dates Page -->
+    <div id="exams" class="page-content">
+        <div class="container">
+            <h1 class="section-title">Examination Schedule 2025-26</h1>
+            
+            <div class="admission-section">
+                <h2>Upcoming Examinations</h2>
+                <table class="fee-table">
+                    <thead>
+                        <tr>
+                            <th>Exam Type</th>
+                            <th>Class</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mid-Term Exam</td>
+                            <td>1 to 5</td>
+                            <td>November 20, 2025</td>
+                            <td>November 28, 2025</td>
+                            <td style="color: var(--accent-color); font-weight: bold;">Upcoming</td>
+                        </tr>
+                        <tr>
+                            <td>Mid-Term Exam</td>
+                            <td>6 to 10</td>
+                            <td>November 20, 2025</td>
+                            <td>November 30, 2025</td>
+                            <td style="color: var(--accent-color); font-weight: bold;">Upcoming</td>
+                        </tr>
+                        <tr>
+                            <td>Pre-Board Exam</td>
+                            <td>10, 12</td>
+                            <td>January 15, 2026</td>
+                            <td>January 30, 2026</td>
+                            <td style="color: var(--text-light);">Scheduled</td>
+                        </tr>
+                        <tr>
+                            <td>Annual Exam</td>
+                            <td>1 to 9</td>
+                            <td>March 10, 2026</td>
+                            <td>March 25, 2026</td>
+                            <td style="color: var(--text-light);">Scheduled</td>
+                        </tr>
+                        <tr>
+                            <td>Board Exam</td>
+                            <td>10, 12</td>
+                            <td>February 15, 2026</td>
+                            <td>March 30, 2026</td>
+                            <td style="color: var(--text-light);">Scheduled</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="admission-section">
+                <h2>Important Instructions</h2>
+                <ul style="line-height: 2; margin-left: 20px;">
+                    <li>Students must carry their admit card and ID card to the examination hall</li>
+                    <li>Arrive at least 15 minutes before the exam start time</li>
+                    <li>Electronic devices, books, and notes are strictly prohibited</li>
+                    <li>Use of unfair means will result in disqualification</li>
+                    <li>Follow the exam schedule carefully - subject-wise timings will be announced</li>
+                    <li>Results will be declared within 15 days of exam completion</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Staff Directory Page -->
+    <div id="staff" class="page-content">
+        <div class="container">
+            <h1 class="section-title">Our Faculty & Staff</h1>
+            
+            <div class="staff-grid">
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <div class="staff-info">
+                        <div class="staff-name">Dr. Rajesh Kumar</div>
+                        <div class="staff-designation">Principal</div>
+                        <p style="font-size: 13px; color: var(--text-light); margin: 10px 0;">Ph.D. in Education | 25 Years Experience</p>
+                        <div class="staff-contact">
+                            <i class="fas fa-envelope"></i> principal@brightfuture.edu<br>
+                            <i class="fas fa-phone"></i> +91 1234567890
+                        </div>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="staff-info">
+                        <div class="staff-name">Mrs. Priya Sharma</div>
+                        <div class="staff-designation">Vice Principal</div>
+                        <p style="font-size: 13px; color: var(--text-light); margin: 10px 0;">M.Ed. | 20 Years Experience</p>
+                        <div class="staff-contact">
+                            <i class="fas fa-envelope"></i> priya.sharma@brightfuture.edu<br>
+                            <i class="fas fa-phone"></i> +91 1234567891
+                        </div>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="staff-info">
+                        <div class="staff-name">Mr. Amit Verma</div>
+                        <div class="staff-designation">Mathematics Teacher</div>
+                        <p style="font-size: 13px; color: var(--text-light); margin: 10px 0;">M.Sc. Mathematics | 15 Years Experience</p>
+                        <div class="staff-contact">
+                            <i class="fas fa-envelope"></i> amit.verma@brightfuture.edu<br>
+                            <i class="fas fa-phone"></i> +91 1234567892
+                        </div>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="staff-info">
+                        <div class="staff-name">Ms. Sneha Patel</div>
+                        <div class="staff-designation">English Teacher</div>
+                        <p style="font-size: 13px; color: var(--text-light); margin: 10px 0;">M.A. English | 12 Years Experience</p>
+                        <div class="staff-contact">
+                            <i class="fas fa-envelope"></i> sneha.patel@brightfuture.edu<br>
+                            <i class="fas fa-phone"></i> +91 1234567893
+                        </div>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="staff-info">
+                        <div class="staff-name">Dr. Suresh Reddy</div>
+                        <div class="staff-designation">Science Teacher</div>
+                        <p style="font-size: 13px; color: var(--text-light); margin: 10px 0;">Ph.D. Physics | 18 Years Experience</p>
+                        <div class="staff-contact">
+                            <i class="fas fa-envelope"></i> suresh.reddy@brightfuture.edu<br>
+                            <i class="fas fa-phone"></i> +91 1234567894
+                        </div>
+                    </div>
+                </div>
+
+                <div class="staff-card">
+                    <div class="staff-image">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="staff-info">
+                        <div class="staff-name">Mr. Rahul Singh</div>
+                        <div class="staff-designation">Computer Teacher</div>
+                        <p style="font-size: 13px; color: var(--text-light); margin: 10px 0;">MCA | 10 Years Experience</p>
+                        <div class="staff-contact">
+                            <i class="fas fa-envelope"></i> rahul.singh@brightfuture.edu<br>
+                            <i class="fas fa-phone"></i> +91 1234567895
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Page -->
+    <div id="gallery" class="page-content">
+        <div class="container">
+            <h1 class="section-title">Photo Gallery</h1>
+            
+            <div class="gallery-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Infrastructure</button>
+                <button class="filter-btn">Events</button>
+                <button class="filter-btn">Sports</button>
+                <button class="filter-btn">Cultural</button>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>School Building</h3>
+                        <p>Main Campus View</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-basketball-ball"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Sports Day</h3>
+                        <p>Annual Sports Event 2025</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Science Lab</h3>
+                        <p>Modern Laboratory Facilities</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Library</h3>
+                        <p>Well-stocked Library</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Cultural Program</h3>
+                        <p>Annual Day Celebration</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h3>Computer Lab</h3>
+                        <p>Digital Learning Center</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page-content">
+        <div class="container">
+            <h1 class="section-title">Contact Us</h1>
+            
+            <div class="contact-grid">
+                <div>
+                    <div class="contact-info-box">
+                        <h2>Get In Touch</h2>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>Address</h3>
+                                <p>123 Education Street, Knowledge Nagar<br>Indore, Madhya Pradesh - 452001</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>Main Office: +91 1234567890<br>Admission: +91 1234567891</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@brightfuture.edu<br>admission@brightfuture.edu</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div>
+                                <h3>Office Hours</h3>
+                                <p>Monday - Friday: 8:00 AM - 4:00 PM<br>Saturday: 8:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="contact-info-box">
+                        <h2>Send Us a Message</h2>
+                        <form>
+                            <div class="form-group">
+                                <label>Name *</label>
+                                <input type="text" required placeholder="Your Name">
+                            </div>
+                            <div class="form-group">
+                                <label>Email *</label>
+                                             
+</body>
